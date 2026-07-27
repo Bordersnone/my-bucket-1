@@ -1,6 +1,7 @@
 My first file 
 Hello Teacher
 My first file
+Good day
 
 
 <nice and clean now>

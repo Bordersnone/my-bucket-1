@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Card & Navigation</title>
+    <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background-color: #c8d7ed;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: #ffffff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-list {
+      list-style: none;
+      margin: 0;
+      padding: 12px 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: #333333;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: all 0.2s ease;
+    }
+
+    .nav-link:hover {
+      background-color: #eff6ff;
+      color: #2563eb;
+    }
+
+    .nav-link.active {
+      background-color: #2563eb;
+      color: #ffffff;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+      padding: 40px 20px;
+    }
+
+    .section {
+      scroll-margin-top: 80px; 
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 380px;
+      padding: 24px;
+      background-color: #ffffff;
+      border: 1px solid #db5454;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 12px;
+      transition: transform 0.6s ease;
+    }
+
+    .card-img:hover {
+      transform: rotate(360deg);
+    }
+
+    .card h2 {
+      margin: 8px 0;
+      color: #1a1a1a;
+    }
+
+    .card p {
+      margin: 0 0 20px 0;
+      color: #666666;
+      font-size: 14px;
+    }
+
+    .links-row {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .links-row a {
+      text-decoration: none;
+      color: #2563eb;
+      padding: 8px 12px;
+      border-radius: 6px;
+      background-color: #eff6ff;
+      font-weight: bold;
+      font-size: 14px;
+      transition: background-color 0.2s, color 0.2s;
+    }
+
+    .links-row a:hover {
+      background-color: #2563eb;
+      color: #ffffff;                
+    }
+
+    .dummy-card {
+      width: 100%;
+      max-width: 500px;
+      padding: 40px 24px;
+      background-color: #ffffff;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .about-me {
+      text-align: left;
+      font-size: 18px;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 100;
+      font-style: italic;
+      line-height: 1.7;
+    }
+
+    .langlist {
+      text-align: left;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .skills {
+      text-align: left;
+      line-height: 1.7;
+      font-weight: 600;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-style: inherit;
+      font-size: 18px;
+    }
+
+    @media (max-width: 600px) {
+      .nav-list {
+        gap: 8px;
+        padding: 8px 0;
+      }
+
+      .nav-link {
+        padding: 6px 10px;
+        font-size: 13px;
+      }
+      .container {
+        padding: 20px 12px;
+        gap: 30px;
+      }
+
+      .card, .dummy-card {
+        padding: 20px 16px;
+      }
+
+      .about-me, .langlist, .skills {
+        font-size: 15px;
+      }
+    }
+
+  
+    @media (max-width: 400px) {
+      .card-img {
+        display: none;
+      }
+      
+      .links-row {
+        flex-direction: column;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+   <nav class="navbar">
+     <ul class="nav-list">
+       <li><a href="#home" class="nav-link active">Home</a></li>
+       <li><a href="#about" class="nav-link">About</a></li>
+       <li><a href="#lang" class="nav-link">Languages</a></li>
+       <li><a href="#skills" class="nav-link">Skills</a></li>
+     </ul>
+   </nav>
+
+   <div class="container">
+     <section id="home" class="section">
+       <div class="card">
+        <img src="avatar.jpeg" alt="foto" class="card-img">
+        <h2>Denys Horshkalov</h2>
+        <p>Operations manager</p>
+        
+        <div class="links-row">
+          <a href="https://github.com/DenGor911" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/denys-horshkalov-445b4668" target="_blank">LinkedIn</a>
+          <a href="https://www.t.me/Gorshkalov" target="_blank">Telegram</a>
+        </div>
+      </div>
+     </section>
+
+     <section id="about" class="section">
+       <div class="dummy-card">
+         <h2>About Me</h2>
+         <p class="about-me">"My name is Denys, and I am a results-driven Operations Manager with a passion for continuous professional growth. Rapidly adapting to new environments and changing business requirements is one of my core strengths, allowing me to easily navigate dynamic workplace settings and find creative solutions under any conditions. Strong communication skills enable me to build productive relationships with team members, stakeholders, and clients."</p>
+       </div>
+     </section>
+
+     <section id="lang" class="section">
+       <div class="dummy-card">
+         <h2>Languages</h2>
+          <ul class="langlist">
+            <li>Ukrainian</li>
+            <li>English</li>
+            <li>Russian</li>
+            <li>Croatian</li>
+            <li>Polish</li>
+          </ul>
+       </div>
+     </section>
+
+     <section id="skills" class="section">
+       <div class="dummy-card">
+         <h2>Skills</h2>
+         <ul class="skills">
+          <li>HTML</li>
+          <li>Microsoft Automatization</li>
+          <li>MS Excel</li>
+          <li>Google Sheets</li>
+          <li>Google Apps script</li>
+          <li>Jira</li>
+          <li>Confluence</li>
+          <li>GitHub</li>
+         </ul>
+       </div>
+     </section>
+
+   </div>
+
+</body>
+</html>

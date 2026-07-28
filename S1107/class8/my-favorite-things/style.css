@@ -1,0 +1,24 @@
+body{
+    font-family: Arial, sans-serif;
+}
+h1{
+    color: rgb(137, 0, 0);
+}
+h2{
+    color: rgb(45, 241, 24);
+}
+li{
+    font-size: small;
+}
+p{
+    line-height: inherit;
+}
+.highlight{
+    background-color: aquamarine;
+}
+#things{
+    color: chocolate;
+}
+ul li{
+    background-color: rgb(246, 246, 152);
+}

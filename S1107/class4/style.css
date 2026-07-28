@@ -1,0 +1,37 @@
+body{
+    display: flex;
+}
+#div1{
+    background-color: lightblue;
+    text-align: center;
+    border: red solid 10px;
+    border-radius: 50px;
+    width: 33%;
+    padding: 40px;
+    margin: 5px;
+    margin-bottom: auto;
+}
+
+#div2{
+    background-color: lightgray;
+    text-align: center;
+    border: blue dotted 5px;
+    border-radius: 50px;
+    width: 33%;
+    padding: 40px;
+    margin: 5px;
+    margin-bottom: auto;
+
+
+}
+
+#div3{
+    background-color: lightgreen;
+    text-align: center;
+    border: green double 10px;
+    border-radius: 50px;
+    width: 33%;
+    padding: 40px;
+    margin: 5px;
+    margin-bottom: auto;
+}

@@ -1,0 +1,23 @@
+body, p{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    display: flex;
+}
+
+.block1, .block2, .foundation{
+    border: gray solid 1px;
+}
+
+.block1, .block2{
+    background-color: lightgray;
+    padding: 15px 15px 45px 15px;
+}
+
+.foundation{
+    background-color: gray;
+    color: white;
+    padding: 0px 15px;
+    font-size: smaller;
+}

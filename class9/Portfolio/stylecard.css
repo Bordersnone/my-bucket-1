@@ -1,0 +1,143 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.firstdiv{
+    margin: 100px auto 0;
+    height: 580px;
+    width: 580px;
+    border-radius: 10px;
+    border: 3px solid gray;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px 15px blue;
+}
+.seconddiv{
+    height: 480px;
+    width: 480px;
+    border-radius: 10px;
+    border: 3px solid gray;
+    padding: 20px;
+    box-shadow: 0px 5px 15px  green;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.seconddiv:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 86, 40, 0.7);
+}
+.divimg, .divh1, .divp{
+    justify-content: center;
+    display: flex;
+}
+
+.divskill{
+    display: flex;
+    justify-content: space-evenly;
+}
+img{
+    align-items: center;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+.cardpic:hover {
+  animation: spin 1s linear;
+}
+h1{
+    align-items: center;
+
+}
+a:hover{
+    color: green;
+}
+a{
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.list li{
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.list li:not(.logo){
+    padding: 0 2em;
+    background-color: beige;
+}
+.list li:not(.logo):hover{
+    background-color: rgb(0, 255, 21);
+}
+
+
+header .list {
+    background-color:  rgb(168, 248, 160);
+    padding: 0 2em;
+    height: 50px;
+}
+
+header .logo{
+    padding: 10px;
+    width: 30px;
+    margin-left: 0;
+}
+
+img, a{
+    vertical-align: middle;
+}
+a {
+    line-height: 50px;
+    text-decoration: none;
+    color: blue;
+}
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+.list{
+    display: flex;
+    justify-content: space-around;
+}
+
+header a.active {
+  background-color: #007bff;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#gallery{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+#gallery img {
+  transition: transform 0.3s ease;
+}
+
+#gallery img:hover {
+  transform: scale(1.1);
+}
+
+#contact{
+    padding: 0 50px;
+}

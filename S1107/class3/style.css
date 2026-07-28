@@ -1,0 +1,21 @@
+body {
+    background-color: gray;
+    font-family: Arial;
+}
+
+.none{
+    color: blue;
+    text-align: center;
+}
+
+h2, .important{
+    color: red;
+}
+
+p{
+    font-size: 16px;
+}
+
+li{
+    font-size: 14px;
+}

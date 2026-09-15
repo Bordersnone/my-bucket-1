@@ -1,0 +1,16 @@
+//use raw html, css, and js//
+
+B2B/SaaS Dashboard
+The dashboard should provide users with the following information:
+
+Portfolio / Overview — the total value of the investment portfolio.
+Properties / Assets — a list of real estate properties and assets.
+Asset Performance — how well each property or asset is performing.
+Revenue / Income — income, returns, and cash flow.
+Capital Overview — invested capital and how it is distributed.
+Analytics — charts, metrics, and performance indicators over different time periods.
+Navigation — easy navigation between different sections of the dashboard.
+The design is built around the idea of “a lot of complex financial data, while keeping the interface calm, clear, and easy to understand.”
+
+The main design principles are clarity, hierarchy, and fast decision-making.
+

@@ -1,0 +1,163 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: rgb(84, 42, 13);
+    background-color: rgb(251, 239, 198);
+}
+
+.list li{
+    display: flex;
+    flex: 0 1 auto;
+    vertical-align: middle;
+    align-items: center;
+    font-weight: 900;
+    font-size: large;
+    height: 50px;
+}
+
+.list li:not(.logo){
+    padding: 0 2em;
+    background-color: rgb(130, 88, 60);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.list li:not(.logo):hover{
+    background-color: rgb(251, 239, 198);
+}
+
+header .list {
+    background-color:rgb(130, 88, 60);
+    padding: 0 2em;
+    height: 100px;
+    align-items: center;
+}
+
+header .logo{
+    padding: 10px;
+    width: 50px;
+    margin: 10px;
+}
+
+header img, a{
+    border-radius: 5px;
+}
+
+a {
+    line-height: 30px;
+    text-decoration: none;
+    color: rgb(84, 42, 13);
+    padding: 2px 5px;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.list{
+    display: flex;
+    justify-content: space-around;
+}
+
+header a.active {
+    border: 2px solid rgb(251, 239, 198);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.text{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 70px;
+}
+
+.cards {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-left: 5%;
+}
+
+.cards img {
+    border-radius: 10px;
+    flex: 0 0 590px;
+    width: 390px;
+    height: 590px;
+}
+
+.cards img:hover {
+    transform: scale(1.05);
+}
+
+.minicards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.minicards img{
+    border-radius: 5px;
+    flex: 0 0 90px;
+    width: 90px;
+    height: 90px;
+}
+
+.minicards img:hover {
+    transform: scale(1.30);
+}
+
+.difficulty {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.levels {
+    display: flex;
+    gap: 4px;
+}
+
+.level {
+    width: 25px;
+    height: 6px;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+.level.active {
+    background:  rgb(84, 42, 13);
+}
+
+.difficulty-name {
+    font-size: 14px;
+}
+
+button{
+    margin-top: 20px;
+    margin-left: 2%;
+    background-color: rgb(251, 239, 198);
+    color: rgb(84, 42, 13);
+    border: 2px solid rgb(130, 88, 60);
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+.down{
+    width: 100%;
+    background-color: rgb(130, 88, 60);
+    height: 100px;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
